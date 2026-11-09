@@ -1,0 +1,56 @@
+plugins {
+    id 'java'
+    id 'net.neoforged.moddev' version '2.0.78'
+}
+
+version = '1.0.0'
+group = 'dev.swarm'
+
+base {
+    archivesName = 'skyfront-swarm'
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+repositories {
+    mavenCentral()
+}
+
+neoForge {
+    version = '21.1.172'
+
+    runs {
+        client {
+            client()
+            systemProperty 'neoforge.enabledGameTestNamespaces', 'skyfront_swarm'
+        }
+        server {
+            server()
+            programArgument '--nogui'
+        }
+    }
+
+    mods {
+        skyfront_swarm {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+dependencies {
+    // Skyfront itself (compile against it) plus, for the dev runs, whatever else it needs
+    // (GeckoLib + Superb Warfare). Drop those jars into ./libs too.
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+tasks.withType(ProcessResources).configureEach {
+    var props = [version: project.version]
+    inputs.properties props
+    filesMatching('META-INF/neoforge.mods.toml') {
+        expand props
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}

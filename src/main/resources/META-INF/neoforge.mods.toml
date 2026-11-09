@@ -1,0 +1,34 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+modId = "skyfront_swarm"
+version = "${version}"
+displayName = "Skyfront: Swarm"
+description = '''
+Addon for Skyfront. Piloted Shaheds (131 / 136 / 238 jet / 149 heavy) that load onto the launch rail and fly
+through the Superb Warfare monitor with a long link and long view distance, plus three FPV quads
+(Heavy, Racer, Long-Range) with built-in charges. Every warhead breaks blocks.
+'''
+
+[[dependencies.skyfront_swarm]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.skyfront_swarm]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.skyfront_swarm]]
+modId = "skyfront"
+type = "required"
+versionRange = "[1.5.0,)"
+ordering = "AFTER"
+side = "BOTH"

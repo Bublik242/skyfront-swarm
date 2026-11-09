@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "skyfront:fpv_drone"
+    },
+    {
+      "item": "minecraft:ender_pearl"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:spyglass"
+    }
+  ],
+  "result": {
+    "id": "skyfront_swarm:fpv_longrange",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " T ",
+    "IMI",
+    " T "
+  ],
+  "key": {
+    "T": {
+      "item": "minecraft:tnt"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "M": {
+      "item": "skyfront:molniya_drone"
+    }
+  },
+  "result": {
+    "id": "skyfront_swarm:shahed_131",
+    "count": 1
+  }
+}

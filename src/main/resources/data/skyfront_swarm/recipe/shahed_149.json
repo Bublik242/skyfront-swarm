@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "TIT",
+    "IPI",
+    "TIT"
+  ],
+  "key": {
+    "T": {
+      "item": "minecraft:tnt"
+    },
+    "I": {
+      "item": "minecraft:iron_block"
+    },
+    "P": {
+      "item": "skyfront_swarm:shahed_136_pilot"
+    }
+  },
+  "result": {
+    "id": "skyfront_swarm:shahed_149",
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "skyfront:fpv_drone"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "minecraft:gold_nugget"
+    },
+    {
+      "item": "minecraft:gold_nugget"
+    }
+  ],
+  "result": {
+    "id": "skyfront_swarm:fpv_racer",
+    "count": 1
+  }
+}

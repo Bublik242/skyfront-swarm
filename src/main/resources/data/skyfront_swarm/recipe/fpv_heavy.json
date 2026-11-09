@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " T ",
+    "IFI",
+    " T "
+  ],
+  "key": {
+    "T": {
+      "item": "minecraft:tnt"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "F": {
+      "item": "skyfront:fpv_drone"
+    }
+  },
+  "result": {
+    "id": "skyfront_swarm:fpv_heavy",
+    "count": 1
+  }
+}
